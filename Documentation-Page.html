@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles/Documentation-Page.css">
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <header id="header" class="nav-header">
+        <img class="logo" alt="FreeCodeCamp" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/242px-Python-logo-notext.svg.png">
+        <h1 class="headline">Python Guide</h1>
+      </header>
+      <ul>   
+        <li>
+          <a class="nav-link" href="#Introduction">Introduction</a>
+        </li>
+        <div class="separator"></div>
+        <li>
+          <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Python_and_other_languages">Python and other languages</a>
+        </li>
+        <div class="separator"></div>
+        <li>
+          <a class="nav-link" href="#Hello_world">Hello world</a>
+        </li>
+        <div class="separator"></div>
+        <li>
+          <a class="nav-link" href="#Variables_and_data_types">Variables and data types</a>
+        </li>
+        <div class="separator"></div>
+        <li>
+          <a class="nav-link" href="#Comments">Comments</a>
+        </li>
+        <div class="separator"></div>
+        <li>
+          <a class="nav-link" href="#Control_flow_statements">Control flow statements</a>
+        </li>
+        <div class="separator"></div>
+        <li>
+          <a class="nav-link" href="#Functions">Functions</a>
+        </li>
+        <div class="separator"></div>
+        <li>
+          <a class="nav-link" href="#Variable_scope_and_constants">Variable scope and constants</a>
+        </li>
+        <div class="separator"></div>
+        <li>
+          <a class="nav-link" href="#Data_structures">Data Structures</a>
+        </li>
+        <div class="separator"></div>
+        <li>
+          <a class="nav-link" href="#Classes_and_object-oriented_programming">Classes and object-oriented programming</a>
+        </li>
+        <div class="separator"></div>
+        <li>
+          <a class="nav-link" href="#Modules_and_packages">Modules and packages</a>
+        </li>
+        <div class="separator"></div>
+        <li>
+          <a class="nav-link" href="#Exception_handling">Exception handling</a>
+        </li>
+        <div class="separator"></div>
+        <li>
+          <a class="nav-link" href="#Reference">Reference</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section 
+      id="Introduction"
+      class="main-section">
+        <header>Introduction</header>
+        <article>
+          <p>
+            Python is a high-level, interpreted, and general-purpose programming language known for its readability and simplicity. It is cross‑platform and supports multiple programming paradigms—including procedural, object‑oriented, and functional programming. Python’s design emphasizes code clarity and brevity, making it a popular choice for beginners as well as professionals working in web development, data science, automation, and beyond.
+
+Inside its runtime environment (for example, a terminal, an IDE, or even a web-based interpreter), Python connects with an extensive standard library that supplies modules and tools for tasks such as file I/O, regular expressions, networking, and more.
+          </p>
+        </article>
+        </div>
+      </section>
+
+      <div class="separator-1"></div>
+      <section 
+      id="What_you_should_already_know"
+      class="main-section">
+        <header>What you should already know</header>
+        <article>
+          <p>This guide assumes you have the following background:
+          </p>
+          <ul>
+            <li>
+              A general understanding of computer programming concepts.
+            </li>
+            <li>
+              Familiarity with concepts like variables, control flow (loops and conditionals), and functions.
+            </li>
+            <li>
+              Basic experience with using a command-line interface.
+            </li>
+          </ul>
+          <p>
+            If you’re completely new to programming, you might want to check out introductory tutorials on Python before diving into more detailed topics.
+          </p>
+        </article>
+      </section>
+      <div class="separator-1"></div>
+      <section 
+      id="Python_and_other_languages"
+      class="main-section">
+        <header>Python and other languages</header>
+        <article>
+          <p>
+            Python differs from many other languages in several key areas:
+          </p>
+          <ul>
+            <li>
+              <h4>Dynamic and Strong Typing:</h4> Unlike statically typed languages (e.g., Java or C++), Python requires no explicit type declarations. However, Python is strongly typed—operations that mix incompatible types will raise errors.
+            </li>
+            <li>
+              <h4>Whitespace Significance:</h4> Instead of using curly brackets to define code blocks, Python uses indentation to determine block structure. This design choice leads to code that is both visually uncluttered and semantically clear.
+            </li>
+            <li>
+              <h4>Interpreted Nature:</h4> Python code is executed line-by-line by an interpreter. This allows for rapid development and testing.
+            </li>
+            <li>
+              <h4>Extensive Standard Library:</h4> Python includes modules for many tasks—from web services to data manipulation—which means that many common tasks require minimal external code.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <div class="separator-1"></div>
+      <section 
+      id="Hello_world"
+      class="main-section">
+        <header>Hello world</header>
+        <article>
+          <p>
+            To get started with Python, open your favorite editor or the interactive Python shell (REPL) and type the following code:
+          </p>
+          <code>
+            print("Hello, World!")
+          </code>
+          <p>
+            This simple program outputs the text “Hello, World!” to the console.
+          </p>
+        </article>
+      </section>
+      <div class="separator-1"></div>
+      <section 
+      id="Variables_and_data_types"
+      class="main-section">
+        <header>Variables and data types</header>
+        <article>
+          <p>
+            Python uses dynamic typing; you create a variable simply by assigning a value to a name. Variable names must begin with a letter (or underscore) and can include numbers thereafter. Python is case‑sensitive.
+          </p>
+          <code>
+            # Declaration and assignment
+x = 42
+name = "Alice"
+pi = 3.14159
+
+# You can change the type of a variable at any time:
+x = "Now I'm a string"
+          </code>
+          <p>Python supports several built-in data types:
+          </p>
+          <ul>
+            <li>
+              <h4>Numbers:</h4> Integers 
+              (<code>int</code>), floating‑point numbers (<code>float</code>), and complex numbers (<code>complex</code>).
+            </li>
+            <li>
+              <h4>Booleans:</h4> <code>True</code> and <code>False</code>.
+            </li>
+            <li>
+              <h4>Strings:</h4> Text enclosed in single, double, or triple quotes.
+            </li>
+            <li>
+              <h4>Sequences:</h4> Lists (mutable), tuples (immutable), and ranges.
+            </li>
+            <li>
+              <h4>Mappings:</h4> Dictionaries for key/value pairs.
+            </li>
+            <li>
+              <h4>Sets:</h4> Unordered collection without duplicate elements.
+            </li>
+          </ul>
+          <p>
+            For more details on Python’s built‑in types and their behaviors, see the 
+            <a class="link-more" href="https://developer.mozilla.org/en-US/docs/Glossary/Python">Python Glossary on MDN.</a>
+          </p>
+        </article>
+      </section>
+      <div class="separator-1"></div>
+      <section 
+      id="Comments"
+      class="main-section">
+        <header>Comments</header>
+        <article>
+          <ul>
+            <li>
+              Single-line comments in Python start with the <code>#</code> symbol:
+              <code>
+                <code># </code>This is a single-line comment. print("Comments help explain code!")
+              </code>
+            </li>
+            <li>
+              Multi-line comments aren’t supported in the same way as in some other languages; however, you can use consecutive # lines or use triple‑quoted strings (which are actually string literals that can serve as docstrings):
+              <code>
+                """
+This is a multi-line comment
+that can span several lines.
+"""
+            </code>
+            </li>
+          <ul>
+        </article>
+      </section>
+      <div class="separator-1"></div>
+      <section 
+      id="Control_flow_statements"
+      class="main-section">
+        <header>Control flow statements</header>
+        <article>
+          <h3>If...Else Statements</h3>
+          <p>Use an <code>if</code> statement to execute code only when a condition is true, and use <code>elif</code> and <code>else</code> for additional conditions:
+          </p>
+          <code>
+            temperature = 75
+
+if temperature > 80:
+    print("It's hot outside!")
+elif temperature < 60:
+    print("It's cool outside!")
+else:
+    print("It's just right!")
+          </code>
+          <h3>Loops</h3>
+          <h4>For Loop</h4>
+          <p>
+            Python’s <code>for</code> loop iterates over any iterable (such as a list, tuple, or string):
+          </p>
+          <code>
+            # Iterating over a list
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+# Using range() to iterate over numbers
+for i in range(5):
+    print(i)
+          </code>
+          <h4>While Loop</h4>
+          <p>The <code>while</code> loop repeatedly executes a block as long as a condition is true:
+          </p>
+          <code>
+            n = 0
+while n < 3:
+    print("n is", n)
+    n += 1  # Increment n by 1
+          </code>
+        </article>
+      </section>
+      <div class="separator-1"></div>
+      <section 
+      id="Functions"
+      class="main-section">
+        <header>Functions</header>
+        <article>
+          <h3>Functions</h3>
+          <p>Functions are defined using the <code>def</code> keyword. They encapsulate code for reuse and can accept parameters and return values.
+          </p>
+          <code>
+            def square(number):
+    """Return the square of a number."""
+    return number * number
+
+print(square(5))  # Output: 25
+          </code>
+          <p>
+            Python also supports anonymous functions via the <code>lambda</code> keyword for simple expressions:
+          </p>
+          <code>
+            double = lambda x: x * 2
+print(double(10))  # Output: 20
+          </code>
+          <p>
+            For more on functions and best practices (including docstrings), see the <a class="link-more" href="https://docs.python.org/3/tutorial/index.html">official Python Tutorial</a>
+          </p>
+        </article>
+      </section>
+      <div class="separator-1"></div>
+      <section 
+      id="Variable_scope_and_constants"
+      class="main-section">
+        <header>Variable scope and constants</header>
+        <article>
+          <ul>
+          <li>
+            <h3>Global vs. Local Variables:</h3>
+            <p>Variables defined outside of functions are global. Variables defined inside a function (or block) are local to that function.</p>
+            <code>x = "global"
+
+def func():
+    x = "local"
+    print("Inside function:", x)
+
+func()           # Prints: local
+print("Outside:", x)  # Prints: global
+</code>
+          </li>
+          <li>
+            <h3>Constants:</h3>
+            <p>Python does not enforce constants. By convention, names written in all capital letters indicate that they should not be changed.</p>
+            <code>PI = 3.14159</code>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <div class="separator-1"></div>
+      <section 
+      id="Data_structures"
+      class="main-section">
+        <header>Data structures</header>
+        <article>
+          <h3>Lists and Tuples</h3>
+          <ul>
+            <li>
+              <p>
+                Lists are mutable sequences:
+              </p>
+              <code>
+                numbers = [1, 2, 3]
+numbers.append(4)
+print(numbers)  # Output: [1, 2, 3, 4]
+              </code>
+            </li>
+            <li>
+              Tuples are immutable sequences:
+              <code>
+                coordinates = (10, 20)
+# coordinates[0] = 15  # This would raise an error
+
+              </code>
+            </li>
+          </ul>
+          <h3>Dictionaries</h3>
+          <p>Mappings: Dictionaries for key/value pairs
+          </p>
+          <code>
+            person = {"name": "Alice", "age": 30}
+print(person["name"])  # Output: Alice
+
+# Adding a new key/value pair:
+person["city"] = "New York"
+          </code>
+          <h3>Sets</h3>
+          <p>Sets are unordered collections without duplicates:</p>
+          <code>unique_numbers = {1, 2, 2, 3}
+print(unique_numbers)  # Output: {1, 2, 3}
+</code>
+        </article>
+      </section>
+      <div class="separator-1"></div>
+      <section 
+      id="Classes_and_object-oriented_programming"
+      class="main-section">
+        <header>Classes and object-oriented programming</header>
+        <article>
+          <p>Python supports object‑oriented programming with classes. Define a <code>class</code> using the class keyword and use <code>__init__</code> to initialize objects
+          </p>
+          <code>
+            class Dog:
+    def __init__(self, name, breed):
+        self.name = name  # Instance variable
+        self.breed = breed
+
+    def bark(self):
+        print(f"{self.name} says: Woof!")
+
+# Create an instance of Dog
+my_dog = Dog("Buddy", "Golden Retriever")
+my_dog.bark()  # Output: Buddy says: Woof!
+          </code>
+          <p>
+            Every method in a class receives <code>self</code> as its first parameter to refer to the current instance.
+          </p>
+        </article>
+      </section>
+      <div class="separator-1"></div>
+      <section 
+      id="Modules_and_packages"
+      class="main-section">
+        <header>Modules and packages</header>
+        <article>
+          <p>Python code is organized into modules (files with a <code>.py</code> extension) and packages (directories containing an <code>__init__.py</code> file). Import modules using the <code>import</code> keyword:
+          </p>
+          <code>
+            import math
+print(math.sqrt(16))  # Output: 4.0
+          </code>
+<p>For more details on modules, see the <a class="link-more" href="https://docs.python.org/3/library/index.html">official Python documentation</a></p>
+        </article>
+      </section>
+      <section id="Exception_handling"  
+      class="main-section">
+        <header>Exception handling</header>
+        <article>
+          <p>Handle errors using <code>try
+          </code>, <code>except</code>, <code>else</code>, and <code>finally</code> blocks:
+          </p>
+          <code>
+            try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+else:
+    print("Division succeeded!")
+finally:
+    print("This is executed no matter what.")
+          </code>
+        </article>
+      </section>
+      <div class="separator-1"></div>
+      <section id="Reference" class="main-section">
+        <header>Reference</header>
+        <article>
+          <p>
+            Python’s clean syntax and extensive standard library make it an ideal language for rapid development in many domains. Whether you’re automating simple tasks, building web applications, or performing data analysis, Python provides an elegant and efficient solution.
+
+For further reading and more advanced topics, consult the <a class="link-more" href="https://docs.python.org/3/">Python Official Documentation</a> and explore tutorials and guides available on MDN’s Python glossary page
+          </p>
+        </article>
+      </section>
+    </main>
+
+  </body>
+</html>
