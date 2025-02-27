@@ -485,7 +485,7 @@ a {
 }
 
 .portfolio-item img {
-  width: 100%;
+  width: 150%;
   height: 300px;
   object-fit: cover;
   border-radius: 15px;
