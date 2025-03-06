@@ -20,6 +20,30 @@
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+  
+  --header-height: 3rem;
+  --font-semi: 600;
+
+  --first-color: #4070F4;
+  --second-color: #0E2431;
+
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: .938rem;
+
+  --mb1: .5rem;
+  --mb2: 1rem;
+  --mb3: 1.5rem;
+  --mb4: 2rem;
+  --mb5: 2.5rem;
+  --mb6: 3rem;
+
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
 }
 
 /* dark mode colors */
@@ -592,6 +616,7 @@ a {
 /*CONTACT*/
 .contact-button {
     display: block;
+    
     border: none;
     outline: none;
     font-size: var(--normal-font-size);
