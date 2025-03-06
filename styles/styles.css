@@ -22,8 +22,8 @@
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
 
-/* Light mode colors */
-.light-mode {
+/* dark mode colors */
+.dark-mode {
   --color-primary: #FFFFFF;
   --color-secondary: #1a73e8;
   --color-white: #454e56;
